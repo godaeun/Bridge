@@ -15,10 +15,12 @@ function setup(){
    size6=[80,60,90];
 }
 
+
+
 function draw(){
    background(3,3,3);
    noStroke(19,29,77);
-
+   noCursor();
 
    //별
    fill(Math.random()*255,Math.random()*255,Math.random()*255,70);
@@ -1514,57 +1516,122 @@ function draw(){
 
 //폭죽 strokeWeight 두께, stroke 색상, ellipse 위치
 
+   fill(255,255,255,20);
+   ellipse(100,100,50,50);
+   ellipse(450,150,50,50);
+   ellipse(800,200,50,50);
+   ellipse(1000,50,50,50);
+   ellipse(1150,350,50,50);
+   ellipse(1500,120,50,50);
+   ellipse(1800,250,50,50);
    noFill();
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*205,Math.random()*150,Math.random()*150);
-   ellipse(100,100, r%size[i],r%size[i]);
-   r=r+1;
+
+   if (mouseX < 150){
+      if (mouseX > 50){
+         if(mouseY < 150){
+            for(var i = 0 ; i < 2; i++){
+               strokeWeight(30*Math.random())
+               stroke(Math.random()*205,Math.random()*150,Math.random()*150);
+               ellipse(100,100, r%size[i],r%size[i]);
+               r=r+1;
+            }
+         }
+      } 
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*255,Math.random()*255,Math.random()*193);
-   ellipse(450,150, r%size1[i],r%size1[i]);
-   r=r+1;
+   else if (mouseX < 500){
+      if(mouseX > 400){
+         if(mouseY < 200){
+            if(mouseY > 100){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*255,Math.random()*255,Math.random()*193);
+                  ellipse(450,150, r%size1[i],r%size1[i]);
+                  r=r+1;
+               }
+            }
+         }
+      } 
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*235,Math.random()*240,Math.random()*190);
-   ellipse(800,200, r%size2[i],r%size2[i]);
-   r=r+1;
+   else if (mouseX < 850){
+      if (mouseX > 750){
+         if(mouseY < 250){
+            if(mouseY > 150){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*235,Math.random()*240,Math.random()*190);
+                  ellipse(800,200, r%size2[i],r%size2[i]);
+                  r=r+1;
+               }
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*235,Math.random()*250,Math.random()*230);
-   ellipse(1100,50, r%size3[i],r%size3[i]);
-   r=r+1;
+   else if (mouseX < 1100){
+      if(mouseX > 900){
+         if(mouseY < 150){
+            if(mouseY > 0){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*235,Math.random()*250,Math.random()*230);
+                  ellipse(1000,50, r%size3[i],r%size3[i]);
+                  r=r+1;
+               }
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*245,Math.random()*215,Math.random()*178);
-   ellipse(1500,120, r%size4[i],r%size4[i]);
-   r=r+1;
+   else if (mouseX < 1250){
+      if(mouseX > 1050){
+         if(mouseY < 450){
+            if(mouseY > 250){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*245,Math.random()*185,Math.random()*153);
+                  ellipse(1150,350, r%size6[i],r%size6[i]);
+                  r=r+1;
+               }
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*255,Math.random()*235,Math.random()*180);
-   ellipse(1800,250, r%size5[i],r%size5[i]);
-   r=r+1;
+   else if (mouseX < 1550){
+      if(mouseX > 1450){
+         if(mouseY < 220){
+            if(mouseY > 20){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*245,Math.random()*215,Math.random()*178);
+                  ellipse(1500,120, r%size4[i],r%size4[i]);
+                  r=r+1;
+               }
+            } 
+         }
+      }
+   }
+  
+   else if (mouseX < 1900){
+      if(mouseX > 1700){
+         if(mouseY < 350){
+            if(mouseY > 150){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*255,Math.random()*235,Math.random()*180);
+                  ellipse(1800,250, r%size5[i],r%size5[i]);
+                  r=r+1;
+               } 
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*245,Math.random()*185,Math.random()*153);
-   ellipse(1150,350, r%size6[i],r%size6[i]);
-   r=r+1;
-   }
-
-
+      
+      
+      
 
    // mouse ellipse
    ellipse(mouseX, mouseY, 3, 3);
@@ -1578,6 +1645,28 @@ function draw(){
    {
       trailX[i] = (trailX[i-1] + trailX[i] * 5) / 6;
       trailY[i] = (trailY[i-1] + trailY[i] * 5) / 6;
+      strokeWeight(30*Math.random())
+                  stroke(Math.random()*245,Math.random()*215,Math.random()*178);
+                  
       ellipse(trailX[i], trailY[i], 4, 4);
    }
+
+
+//막대
+
+   strokeWeight();
+   stroke();
+   fill(107,89,211);
+   rect(mouseX-5, mouseY, 15, 150);
+   fill(100);
+   rect(mouseX, mouseY+150, 5, 60);
+
+
+   fill(252*Math.random(), 240*Math.random(), 47*Math.random(), 40);
+   rect(mouseX-15, mouseY-15, 30, 30);
+   fill(252*Math.random(), 192*Math.random(), 47*Math.random(), 70);
+   rect(mouseX-10, mouseY-10, 20, 20);
+   fill(225*Math.random(), 106*Math.random(), 52*Math.random(), 100);
+   rect(mouseX-5, mouseY-5, 10, 10);
+
 }
