@@ -8,7 +8,7 @@ var bg;
 var y = 0;
 
 function setup(){
-     bg = loadImage("zzz.jpg")
+     bg = loadImage("bridge/zzz.jpg")
    createCanvas(1540,912);
 
    r=0;
