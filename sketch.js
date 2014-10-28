@@ -1,11 +1,16 @@
+var count;
 var r;
+var i;
 var trailX = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var img;
 
 function setup(){
-   createCanvas(1920,830);
+     bg = loadImage("zzz.jpg")
+   createCanvas(1540,912);
 
    r=0;
+   i=0;
    size=[120,70,100];
    size1=[180,100,150];
    size2=[150,80,120];
@@ -13,14 +18,32 @@ function setup(){
    size4=[100,80,140];
    size5=[170,110,140];
    size6=[80,60,90];
+
+   count=1920;
+
 }
 
+
 function draw(){
-   background(3,3,3);
-   noStroke(19,29,77);
+   background(bg);
+  
+  stroke(226, 204, 0);
+  line(0, y, width, y);
+  
+  y++;
+  if (y > height) {
+    y = 0; 
+  }
+   noStroke();
+   noCursor();
 
 
-   //별
+
+   ellipse(10);
+
+
+
+   //ëł
    fill(Math.random()*255,Math.random()*255,Math.random()*255,70);
    rect(20,180,17,17);
    rect(120,80,15,15);
@@ -40,7 +63,7 @@ function draw(){
    rect(1800,130,17,17);
    rect(1900,220,13,13);
 
-   //기둥0
+   //ę¸°ëĽ0
    fill(118,199,184);
    rect(410,290,10,60);
    fill(118,199,184);
@@ -51,7 +74,7 @@ function draw(){
    rect(410,290,20,10);
    rect(410,490,10,80);
 
-   //기둥1
+   //ę¸°ëĽ1
    fill(44,169,199);
    rect(420,290,10,60);
    fill(44,169,199);
@@ -71,7 +94,7 @@ function draw(){
    fill(53,45,36);
    rect(395,580,60,20);
 
-   //기둥2
+   //ę¸°ëĽ2
    fill(27,138,180);
    rect(430,290,10,60);
    fill(27,138,180);
@@ -82,7 +105,7 @@ function draw(){
    fill(27,138,180);
    rect(430,500,10,70);
 
-   //다리선1
+   //ë¤ëŚŹě 1
    fill(193,191,137);
    rect(400,300,10,10);
    fill(193,191,137);
@@ -179,7 +202,7 @@ function draw(){
 
 
 
-   //다리선2
+   //ë¤ëŚŹě 2
    fill(193,191,137);
    rect(440,300,10,10);
    fill(193,191,137);
@@ -275,7 +298,7 @@ function draw(){
    fill(169,104,113);
 
 
-   //다리선3
+   //ë¤ëŚŹě 3
    fill(193,191,137);
    rect(1560,320,10,10);
    fill(193,191,137);
@@ -359,7 +382,7 @@ function draw(){
    fill(169,104,113);  
 
 
-   //다리선4
+   //ë¤ëŚŹě 4
    fill(193,191,137);
    rect(1600,320,10,10);
    fill(193,191,137);
@@ -442,7 +465,7 @@ function draw(){
    rect(1860,440,10,10);
    fill(169,104,113);  
 
-   //1번째다리몸통
+   //1ë˛ě§¸ë¤ëŚŹëŞ¸íľ
    fill(125,107,105);
    rect(0,450,20,10);
    fill(125,107,105);
@@ -733,7 +756,7 @@ function draw(){
 
 
 
-  //2번째 몸통
+  //2ë˛ě§¸ ëŞ¸íľ
    fill(224,87,77);
    rect(20,460,10,10);
    rect(60,460,10,10);
@@ -784,7 +807,7 @@ function draw(){
    rect(1860,460,10,10);
    rect(1900,460,10,10);   
 
-  //3번째 몸통
+  //3ë˛ě§¸ ëŞ¸íľ
    fill(224,87,77);
    rect(10,470,10,10);
    rect(30,470,10,10);  
@@ -886,7 +909,7 @@ function draw(){
 
 
 
-  //4번째 몸통
+  //4ë˛ě§¸ ëŞ¸íľ
    fill(224,87,77);
    rect(0,480,10,10);
    rect(40,480,10,10);
@@ -939,7 +962,7 @@ function draw(){
    rect(1920,480,10,10);
 
 
-  //5번째 몸통
+  //5ë˛ě§¸ ëŞ¸íľ
    fill(75,66,57);
    rect(0,490,20,10);
    fill(75,66,57);
@@ -1232,7 +1255,7 @@ function draw(){
    rect(1910,490,30,10);
    fill(75,66,57);
 
-   //기둥3
+   //ę¸°ëĽ3
    fill(118,199,184);
    rect(1570,310,10,40);
    fill(118,199,184);
@@ -1251,7 +1274,7 @@ function draw(){
    rect(1555,580,60,20);
 
 
-   //기둥4
+   //ę¸°ëĽ4
    fill(63,170,150);
    rect(1580,310,10,40);
    fill(63,170,150);
@@ -1260,7 +1283,7 @@ function draw(){
    rect(1580,400,10,50);
    rect(1580,500,10,70);
 
-   //기둥5
+   //ę¸°ëĽ5
    fill(32,137,150)
    rect(1590,310,10,40);
    fill(32,137,150)
@@ -1269,7 +1292,7 @@ function draw(){
    rect(1590,400,10,50);
    rect(1590,500,10,70);
 
-   //가로등
+   //ę°ëĄëą
 
    fill(215,103,0);    
    rect(20,420,10,10);
@@ -1309,7 +1332,7 @@ function draw(){
    fill(98,103,94);  
  
 
-   //바다비침
+   //ë°ë¤ëšěš¨
 
    fill(Math.random()*20,Math.random()*18,Math.random()*19,50);
    rect(0,600,200,250);
@@ -1511,58 +1534,130 @@ function draw(){
    fill(Math.random()*20,Math.random()*18,Math.random()*19,50);
    rect(1900,600,200,250);
 
+//러버덕
+   drawDuck(count,550);
+   count=count-1;
+   if(count>1920){
+   count=0;
+} 
 
-//폭죽 strokeWeight 두께, stroke 색상, ellipse 위치
 
+//í­ěŁ˝ strokeWeight ëęť, stroke ěě, ellipse ěěš
+
+   fill(255,255,255,20);
+   ellipse(100,100,50,50);
+   ellipse(450,150,50,50);
+   ellipse(800,200,50,50);
+   ellipse(1000,50,50,50);
+   ellipse(1150,350,50,50);
+   ellipse(1500,120,50,50);
+   ellipse(1800,250,50,50);
    noFill();
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*205,Math.random()*150,Math.random()*150);
-   ellipse(100,100, r%size[i],r%size[i]);
-   r=r+1;
+
+   if (mouseX < 150){
+      if (mouseX > 50){
+         if(mouseY < 150){
+            for(var i = 0 ; i < 2; i++){
+               strokeWeight(30*Math.random())
+               stroke(Math.random()*205,Math.random()*150,Math.random()*150);
+               ellipse(100,100, r%size[i],r%size[i]);
+               r=r+1;
+            }
+         }
+      } 
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*255,Math.random()*255,Math.random()*193);
-   ellipse(450,150, r%size1[i],r%size1[i]);
-   r=r+1;
+   else if (mouseX < 500){
+      if(mouseX > 400){
+         if(mouseY < 200){
+            if(mouseY > 100){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*255,Math.random()*255,Math.random()*193);
+                  ellipse(450,150, r%size1[i],r%size1[i]);
+                  r=r+1;
+               }
+            }
+         }
+      } 
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*235,Math.random()*240,Math.random()*190);
-   ellipse(800,200, r%size2[i],r%size2[i]);
-   r=r+1;
+   else if (mouseX < 850){
+      if (mouseX > 750){
+         if(mouseY < 250){
+            if(mouseY > 150){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*235,Math.random()*240,Math.random()*190);
+                  ellipse(800,200, r%size2[i],r%size2[i]);
+                  r=r+1;
+               }
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*235,Math.random()*250,Math.random()*230);
-   ellipse(1100,50, r%size3[i],r%size3[i]);
-   r=r+1;
+   else if (mouseX < 1100){
+      if(mouseX > 900){
+         if(mouseY < 150){
+            if(mouseY > 0){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*235,Math.random()*250,Math.random()*230);
+                  ellipse(1000,50, r%size3[i],r%size3[i]);
+                  r=r+1;
+               }
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*245,Math.random()*215,Math.random()*178);
-   ellipse(1500,120, r%size4[i],r%size4[i]);
-   r=r+1;
+   else if (mouseX < 1250){
+      if(mouseX > 1050){
+         if(mouseY < 450){
+            if(mouseY > 250){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*245,Math.random()*185,Math.random()*153);
+                  ellipse(1150,350, r%size6[i],r%size6[i]);
+                  r=r+1;
+               }
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*255,Math.random()*235,Math.random()*180);
-   ellipse(1800,250, r%size5[i],r%size5[i]);
-   r=r+1;
+   else if (mouseX < 1550){
+      if(mouseX > 1450){
+         if(mouseY < 220){
+            if(mouseY > 20){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*245,Math.random()*215,Math.random()*178);
+                  ellipse(1500,120, r%size4[i],r%size4[i]);
+                  r=r+1;
+               }
+            } 
+         }
+      }
+   }
+  
+   else if (mouseX < 1900){
+      if(mouseX > 1700){
+         if(mouseY < 350){
+            if(mouseY > 150){
+               for(var i = 0 ; i < 2; i++){
+                  strokeWeight(30*Math.random())
+                  stroke(Math.random()*255,Math.random()*235,Math.random()*180);
+                  ellipse(1800,250, r%size5[i],r%size5[i]);
+                  r=r+1;
+               } 
+            }
+         }
+      }
    }
 
-   for(var i = 0 ; i < 2; i++){
-   strokeWeight(30*Math.random())
-   stroke(Math.random()*245,Math.random()*185,Math.random()*153);
-   ellipse(1150,350, r%size6[i],r%size6[i]);
-   r=r+1;
-   }
+
 
 
 
@@ -1578,6 +1673,246 @@ function draw(){
    {
       trailX[i] = (trailX[i-1] + trailX[i] * 5) / 6;
       trailY[i] = (trailY[i-1] + trailY[i] * 5) / 6;
+      strokeWeight(30*Math.random())
+                  stroke(Math.random()*245,Math.random()*215,Math.random()*178);
+                  
       ellipse(trailX[i], trailY[i], 4, 4);
    }
+
+
+//ë§ë
+
+   strokeWeight();
+   noStroke();
+   fill(130);
+   rect(mouseX-10, mouseY, 20, 130);
+   fill(100);
+   rect(mouseX-5, mouseY+130, 10, 60);
+
+
+   fill(252*Math.random(), 240*Math.random(), 47*Math.random(), 40);
+   rect(mouseX-20, mouseY-20, 40, 40);
+   fill(252*Math.random(), 192*Math.random(), 47*Math.random(), 70);
+   rect(mouseX-15, mouseY-15, 30, 30);
+   fill(225*Math.random(), 106*Math.random(), 52*Math.random(), 100);
+   rect(mouseX-10, mouseY-10, 20, 20);
+
+
+
+}
+
+function drawDuck(x,y){
+
+//입 
+fill(209,96,40);
+stroke(209,96,40);
+rect(x,y+60,20,10);
+rect(x+20, y+60,10,10);
+rect(x-10,y+70,60,10);
+
+fill(220,124,89);
+stroke(220,124,89);
+rect(x-10,y+60,10,10);
+
+fill(100,22,7);
+stroke(100,22,7);
+rect(x-10,y+80,60,10);
+
+fill(112,41,7);
+stroke(112,41,7);
+rect(x,y+90,30,10);
+
+fill(199,113,24);
+stroke(199,113,24);
+rect(x+30,y+60,10,10);
+rect(x-20,y+70,10,10);
+//눈
+fill(156,127,47);
+stroke(156,127,47);
+rect(x+60,y+40,10,10);
+rect(x+60,y+60,10,10);
+
+fill(73,56,22);
+stroke(73,56,22);
+rect(x+80,y+50,10,10);
+
+fill(117,93,28);
+stroke(117,93,28);
+rect(x+70,y+40,10,10);
+rect(x+60,y+60,10,10);
+rect(x-30,y+60,10,10);
+
+fill(0);
+stroke(0);
+rect(x+70,y+50,10,10);
+
+fill(58,53,44);
+stroke(58,53,44);
+rect(x+60,y+50,10,10);
+rect(x-30,y+50,10,10);
+rect(x+70,y+60,10,10);
+
+//얼굴
+fill(193,175,118);
+stroke(193,175,118);
+rect(x,y,10,10);
+rect(x+70,y,10,10);
+rect(x-30,y+40,10,10);
+rect(x+110,y+110,10,10);
+rect(x+150,y+140,10,10);
+
+fill(241,216,147);
+stroke(241,216,147);
+rect(x+20,y+20,20,10);
+rect(x+50,y+120,10,10);
+rect(x+40,y+130,20,10);
+
+fill(236,203,84);
+stroke(236,203,84);
+rect(x+20,y+10,20,10);
+rect(x-10,y+20,20,10);
+rect(x+10,y+30,30,10);
+rect(x+120,y+140,30,10);
+rect(x+120,y+150,10,10);
+
+fill(233,196,56);
+stroke(233,196,56);
+rect(x+10,y,60,10);
+rect(x,y+10,20,10);
+rect(x+40,y+10,40,10);
+rect(x+10,y+20,20,10);
+rect(x+40,y+20,50,10);
+rect(x-20,y+30,30,10);
+rect(x+40,y+30,60,10);
+rect(x-20,y+40,80,10);
+rect(x+80,y+40,20,10);
+rect(x-20,y+50,80,10);
+rect(x+90,y+50,10,10);
+rect(x-20,y+60,20,10);
+rect(x+40,y+60,20,10);
+//몸통
+rect(x-60,y+140,20,10);
+rect(x-70,y+150,180,10);
+rect(x-60,y+160,110,10);
+rect(x+60,y+140,50,10);
+rect(x+90,y+110,20,30);
+rect(x+130,y+150,20,10);
+rect(x+10,y+130,10,10);
+
+fill(226,188,54);
+stroke(226,188,54);
+rect(x-40,y+120,40,30);
+rect(x-30,y+110,20,10);
+rect(x-50,y+130,10,10);
+rect(x,y+130,10,20);
+rect(x+10,y+140,50,10)
+rect(x+60,y+110,30,30);
+rect(x+110,y+120,10,30);
+rect(x+120,y+130,10,10);
+
+fill(214,178,65);
+stroke(214,178,65);
+rect(x-10,y+10,10,10);
+rect(x-20,y+20,10,10);
+rect(x+80,y+10,10,10);
+rect(x+90,y+20,10,10);
+rect(x-40,y+110,10,10);
+rect(x+40,y+120,10,10);
+rect(x+20,y+130,20,10);
+rect(x+120,y+120,10,10);
+rect(x+130,y+130,10,10);
+
+fill(178,134,41);
+stroke(178,134,41);
+rect(x-30,y+40,10,10);
+rect(x+100,y+30,10,30);
+rect(x-30,y+100,10,10);
+rect(x,y+120,40,10);
+rect(x+130,y+160,30,10);
+
+fill(171,117,8);
+stroke(171,117,8);
+rect(x-10,y+110,10,10);
+rect(x+50,y+110,10,10);
+rect(x-70,y+160,10,10);
+rect(x-60,y+170,180,20);
+rect(x+50,y+160,80,10);
+rect(x+110,y+150,10,10);
+rect(x+150,y+150,10,10);
+
+fill(132,83,10);
+stroke(132,83,10);
+rect(x-30,y+70,10,20);
+rect(x-20,y+100,20,10);
+rect(x,y+110,50,10);
+rect(x+50,y+100,60,10);
+rect(x+60,y+70,30,10);
+rect(x+80,y+60,20,10);
+rect(x-70,y+170,10,10);
+rect(x-60,y+190,190,10);
+rect(x+120,y+170,40,10);
+rect(x+120,y+180,10,10);
+
+fill(96,78,48);
+stroke(96,78,48);
+rect(x-40,y+50,10,40);
+rect(x+110,y+50,10,30);
+rect(x-30,y+70,10,20);
+
+fill(56,47,34);
+stroke(56,47,34);
+rect(x+110,y+80,10,10);
+
+fill(127,69,7);
+stroke(127,69,7);
+rect(x+100,y+60,10,10);
+rect(x+50,y+70,10,10);
+rect(x+90,y+70,20,10);
+rect(x-20,y+80,10,10);
+rect(x+50,y+80,60,10);
+rect(x-30,y+90,30,10);
+rect(x+30,y+90,70,10);
+rect(x,y+100,50,10);
+rect(x-40,y+200,180,20);
+rect(x-50,y+200,10,10);
+rect(x+130,y+180,20,20);
+
+fill(114,72,19);
+stroke(114,72,19);
+rect(x+100,y+90,10,10);
+rect(x-70,y+180,10,10);
+rect(x-50,y+210,10,10);
+rect(x+150,y+180,10,10);
+
+fill(140,119,61);
+stroke(140,119,61);
+rect(x-50,y+120,10,10);
+rect(x-70,y+140,10,10);
+
+//바다
+fill(65,76,68,180);
+stroke(65,76,68,180);
+rect(x-70,y+220,220,10);
+
+fill(45,56,48,130);
+stroke(45,56,48,130);
+rect(x-80,y+230,240,10);
+
+//풀때기
+fill(0);
+rect(500,800,10,10);
+
+drawFlag(250,250);
+function drawFlag(timing, x, y)
+{
+    for(var i = 0 ; i<=1; i=i+1/640){
+        fill(i*255,0,0);
+        ellipse(i * 640 + x - 640, 
+                (1 - i) * Math.sin((i + timing) * 2 * PI) * 100 + 240 + y -240, 
+                20*i, 
+                20*i);
+    }
+ }
+
+
 }
