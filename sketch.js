@@ -4,6 +4,8 @@ var i;
 var trailX = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var img;
+var bg;
+var y = 0;
 
 function setup(){
      bg = loadImage("zzz.jpg")
