@@ -2,11 +2,9 @@ var count;
 var count1;
 var cuont2;
 var count3;
-var count4;
 var r;
 var i;
 var bg;
-
 
 var trailX = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -30,7 +28,6 @@ function setup(){
    count1=1920;
    count2=1920;
    count3=1920;
-   count4=300;
 
    img=loadImage("bill.jpg");
 
