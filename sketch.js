@@ -12,7 +12,7 @@ var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
 function setup(){
-   song = loadsound('boom.wmv');
+   song = loadsound('boom.wav');
    createCanvas(1920,830);
 
    r=0;
