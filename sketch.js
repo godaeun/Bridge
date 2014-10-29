@@ -11,6 +11,7 @@ function setup(){
    bg = loadImage("1.jpg");
    createCanvas(1920,830);
 
+
    r=0;
    i=0;
    size=[120,70,100];
