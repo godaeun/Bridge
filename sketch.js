@@ -35,7 +35,7 @@ function setup(){
 
 
 function draw(){
-   background(bg,3,3,3);  
+   background(3,3,3);  
 
    noStroke();
    noCursor();
@@ -1598,7 +1598,7 @@ function draw(){
 
 //i?­?Ł˝ strokeWeight e?????, stroke ??????, ellipse ??????
 
-   fill(255,255,255,20);
+   fill(79,159,72,80);
    ellipse(100,100,50,50);
    ellipse(450,150,50,50);
    ellipse(800,200,50,50);
