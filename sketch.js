@@ -35,8 +35,8 @@ function setup(){
 
 
 function draw(){
-   background(bg);  
-   background(3,3,3);
+   background(bg,3,3,3);  
+
    noStroke();
    noCursor();
 
