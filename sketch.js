@@ -2,16 +2,17 @@ var count;
 var count1;
 var cuont2;
 var count3;
+var count4;
 var r;
 var i;
-var bg;
+
 
 var trailX = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
 function setup(){
-   bg = loadImage("1.jpg");
+   song = loadsound('boom.wmv');
    createCanvas(1920,830);
 
    r=0;
@@ -28,14 +29,23 @@ function setup(){
    count1=1920;
    count2=1920;
    count3=1920;
+   count4=300;
 
    img=loadImage("bill.jpg");
 
 }
 
-
+function mousePressed() {
+  if ( song.isPlaying() ) { // .isPlaying() returns a boolean
+    song.stop();
+    background(255,0,0);
+  } else {
+    song.play();
+    background(0,255,0);
+  }
+}
 function draw(){
-   background(bg,3,3,3);  
+   background(3,3,3);  
 
    noStroke();
    noCursor();
@@ -50,10 +60,10 @@ function draw(){
 } 
 
 //자동차
-   drawCar(count1,437);
-   count1=count1+5;
-   if(count1>2000){
-   count1=0;
+   drawCar2(count4,437);
+   count4=count4;
+   if(count4>2000){
+   count4=0;
 } 
 
    //eł?
@@ -1587,6 +1597,7 @@ function draw(){
    count2=0;
 } 
 
+
 //러버덕
    drawDuck(count,550);
    count=count-2;
@@ -1594,7 +1605,12 @@ function draw(){
    count=0;
 }
 
-
+//배배
+ drawBae(count, 620);
+ count= count-3;
+ if(count>1920){
+   count=0;
+ }
 
 //i?­?Ł˝ strokeWeight e?????, stroke ??????, ellipse ??????
 
@@ -2058,6 +2074,53 @@ rect(x+21,y+10,6,1);
 rect(x+21,y+11,5,1);
 }
 
+function drawCar2(x,y){
+
+fill(255);
+rect(x-13,y+4,46,6);
+rect(x,y,15,4);
+rect(x-1,y+1,1,1);
+rect(x-4,y+3,1,1);
+rect(x-3,y+2,3,2);
+rect(x+16,y+1,1,1);
+rect(x+18,y+3,1,1);
+rect(x+16,y+2,2,2);
+rect(x-15,y+6,1,4);
+rect(x-6,y+11,5,1);
+rect(x+21,y+10,6,1);
+rect(x+21,y+11,5,1);
+
+
+fill(97,117,186);
+rect(x-13,y+4,46,6);
+rect(x,y,15,4);
+rect(x-1,y+1,1,1);
+rect(x-4,y+3,1,1);
+rect(x-3,y+2,3,2);
+rect(x+16,y+1,1,1);
+rect(x+18,y+3,1,1);
+rect(x+16,y+2,2,2);
+rect(x-15,y+6,1,4);
+rect(x-6,y+11,5,1);
+rect(x+21,y+10,6,1);
+rect(x+21,y+11,5,1);
+
+
+
+fill(97,117,186);
+rect(x-13,y+4,46,6);
+rect(x,y,15,4);
+rect(x-1,y+1,1,1);
+rect(x-4,y+3,1,1);
+rect(x-3,y+2,3,2);
+rect(x+16,y+1,1,1);
+rect(x+18,y+3,1,1);
+rect(x+16,y+2,2,2);
+rect(x-15,y+6,1,4);
+rect(x-6,y+11,5,1);
+rect(x+21,y+10,6,1);
+rect(x+21,y+11,5,1);
+}
 
 function drawDuck1(x,y){
 
@@ -2297,6 +2360,11 @@ rect(x-80,y+120,130,10);
 
 }
 
+//배1
+function drawBae(x,y){
+//배3
+
+}
 function light(x,y){
    var orgX,orgY,n;
    orgX = 200;
