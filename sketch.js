@@ -5,14 +5,15 @@ var count3;
 var count4;
 var r;
 var i;
-var song;
+var bg;
+
 
 var trailX = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
 function setup(){
-   song = loadsound('boom.wav');
+   bg = loadImage("1.jpg");
    createCanvas(1920,830);
 
    r=0;
@@ -37,7 +38,7 @@ function setup(){
 
 
 function draw(){
-   background(3,3,3);  
+   background(bg,3,3,3);  
 
    noStroke();
    noCursor();
@@ -1817,7 +1818,54 @@ fill(0);
    rect(1860,680,30,120);
    rect(1840,720,20,120);   
 
+//네온사인
 
+fill(172*Math.random(), 255*Math.random(), 28*Math.random(), 100);
+rect(270,780,10,10);
+rect(300,750,10,10);
+fill(114*Math.random(), 0*Math.random(), 255*Math.random(), 100);
+rect(355,760,10,10);
+rect(365,780,10,10);
+rect(380,760,10,10);
+fill(255*Math.random(), 90*Math.random(), 0*Math.random(), 100);
+rect(465,800,10,10);
+rect(485,800,10,10);
+rect(505,800,10,10);
+fill(255*Math.random(), 255*Math.random(), 255*Math.random(), 100);
+rect(610,800,10,10);
+rect(630,800,10,10);
+fill(255*Math.random(), 0*Math.random(), 198*Math.random(), 100);
+rect(680,750,10,10);
+rect(680,770,10,10);
+rect(680,790,10,10);
+fill(0*Math.random(), 255*Math.random(), 162*Math.random(), 100);
+rect(800,780,10,10);
+rect(820,780,10,10);
+fill(0*Math.random(), 222*Math.random(), 255*Math.random(), 100);
+rect(960,790,10,10);
+fill(255*Math.random(), 37*Math.random(), 83*Math.random(), 100);
+rect(1000,790,10,10);
+rect(1020,800,10,10);
+rect(1040,790,10,10);
+rect(1060,800,10,10);
+rect(1080,790,10,10);
+fill(172*Math.random(), 255*Math.random(), 28*Math.random(), 100);
+rect(1210,785,10,10);
+rect(1240,785,10,10);
+fill(114*Math.random(), 0*Math.random(), 255*Math.random(), 100);
+rect(1295,795,10,10);
+fill(255*Math.random(), 90*Math.random(), 0*Math.random(), 100);
+rect(1390,730,10,10);
+rect(1390,750,10,10);
+rect(1390,770,10,10);
+rect(1390,790,10,10);
+fill(255*Math.random(), 255*Math.random(), 255*Math.random(), 100);
+rect(1450,770,10,10);
+rect(1470,785,10,10);
+fill(255*Math.random(), 0*Math.random(), 198*Math.random(), 100);
+rect(1580,795,10,10);
+rect(1600,805,10,10);
+rect(1620,795,10,10);
 }
 
 function drawDuck(x,y){
@@ -2354,6 +2402,7 @@ rect(x-80,y+120,130,10);
 
 //배1
 function drawBae(x,y){
+
 //배3
 
 }
