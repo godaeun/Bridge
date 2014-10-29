@@ -9,7 +9,7 @@ var bg;
 
 function setup(){
    bg = loadImage("1.jpg");
-   createCanvas(1920,654);
+   createCanvas(1920,830);
 
    r=0;
    i=0;
