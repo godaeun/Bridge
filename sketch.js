@@ -11,7 +11,7 @@ var trailY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
 function setup(){
-   bg = loadImage("2.jpg");
+   bg = loadImage("1.jpg");
    createCanvas(1920,830);
 
    r=0;
