@@ -1598,7 +1598,7 @@ function draw(){
 
 //i?­?Ł˝ strokeWeight e?????, stroke ??????, ellipse ??????
 
-   fill(79,159,72,80);
+   fill(255,255,255,70);
    ellipse(100,100,50,50);
    ellipse(450,150,50,50);
    ellipse(800,200,50,50);
